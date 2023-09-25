@@ -1,43 +1,17 @@
-// Require the express web application framework (https://expressjs.com)
-var express = require('express');
-var app = express();
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-// Get port from environment and store in Express.
-var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-/**
- * Normalize a port into a number, string, or false.
- */
-function normalizePort(val) {
-  var port = parseInt(val, 10);
-
-  if (isNaN(port)) {
-    // named pipe
-    return val;
-  }
-
-  if (port >= 0) {
-    // port number
-    return port;
-  }
-
-  return false;
-}
-
-// Tell our application to serve all the files under the `public_html` directory
-app.use(express.static('public_html'))
-
-// Route for handling barcode scanning
-app.get('/scan', function (req, res) {
-  // Placeholder logic for barcode scanning
-  // Here you can integrate a barcode scanning library and perform the scanning process
-  // For demonstration purposes, we'll simply send a response
-  res.send('Scanning in progress...');
-});
-
-// Tell our application to listen to requests at port 3000 on the localhost
-app.listen(port, function () {
-  console.log(`Web server running at: http://localhost:${port}`)
-  console.log("Type Ctrl+C to shut down the web server")
-});
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

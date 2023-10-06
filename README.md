@@ -1,2 +1,0 @@
-# KNOWB4UEATPROJECT
-Team 7 KnowB4UEat SIT725 Group Project

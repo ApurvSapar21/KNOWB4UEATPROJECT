@@ -1,7 +1,6 @@
 # KnowB4ueat
 
-![KnowB4ueat Logo](link_to_logo_image.png)
-
+![KnowB4ueat Logo](https://github.com/ApurvSapar21/KNOWB4UEATPROJECT/blob/KnowBueat-MERN-STACK/kb4ue.png)
 KnowB4ueat is a web application designed to help individuals with food allergies make informed choices about food products in Australia. It is built using the MERN (MongoDB, Express.js, React, Node.js) stack.
 
 ## Table of Contents
